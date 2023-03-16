@@ -21,48 +21,92 @@
     </script>
     
     <style>
-        body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-        }
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+		}
 
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-        }
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
 
-        p {
-            margin-left: 50px;
-            margin-bottom: 10px;
-        }
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			color: #444;
+		}
 
-        input[type="text"] {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            width: 200px;
-            margin-right: 20px;
-        }
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
 
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-            border: none;
-            margin-right: 20px;
-        }
+		form p {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+			font-size: 18px;
+			color: #444;
+		}
 
-        button:hover {
-            background-color: #3e8e41;
-        }
+		form input[type="text"], form input[type="number"] {
+			font-size: 18px;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #eee;
+			color: #444;
+			width: 100%;
+			max-width: 200px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
 
-        #hasil {
-            background-color: #d9d9d9;
-            font-weight: bold;
-            margin-left: 50px;
-        }
-    </style>
+		form input[type="text"] {
+			text-align: center;
+			font-weight: bold;
+			background-color: #fff;
+			cursor: not-allowed;
+		}
+
+		form button {
+			font-size: 20px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #4caf50;
+			color: #fff;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		form button:hover {
+			background-color: #3e8e41;
+		}
+
+		.result {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+			font-size: 24px;
+			color: #444;
+		}
+
+		.result p {
+			margin: 0;
+			font-weight: bold;
+			color: #4caf50;
+		}
+	</style>
 </head>
 
 <body>
